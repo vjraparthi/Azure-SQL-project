@@ -1,0 +1,9 @@
+{
+	"name": "IR-SQLSERVER",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": false
+		}
+	}
+}

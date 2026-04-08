@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQLMIGRATION",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-ORQI7F1\\SQLEXPRESS",
+			"database": "SQLMigration",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "sqlproject",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3ZmVmMzk2ZS1jYWE2LTQ2MzMtODMxNC1kYWI3NjJhMGVmMDIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "IR-SQLSERVER",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
