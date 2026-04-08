@@ -243,7 +243,7 @@
 											"referenceName": "DS_SqlTable_Parquet1",
 											"type": "DatasetReference",
 											"parameters": {
-												"Table_Name": {
+												"tablename": {
 													"value": "@pipeline().parameters.TableName",
 													"type": "Expression"
 												}
@@ -368,7 +368,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
-								"value": "@activity('LKUP_SQLTABLE_WATERMRK_DW').output.value\n",
+								"value": "@activity('LKUP_SQLTABLE_WATERMRK_DW').output.value",
 								"type": "Expression"
 							},
 							"isSequential": true,
@@ -485,7 +485,7 @@
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
-					"Table_Name": {
+					"tablename": {
 						"type": "String"
 					}
 				},
@@ -495,15 +495,15 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": {
-							"value": "@concat(dataset().Table_Name,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
+							"value": "@concat(dataset().tablename,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
 							"type": "Expression"
 						},
 						"folderPath": {
-							"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))\n",
+							"value": "@concat(dataset().tablename,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
 							"type": "Expression"
 						},
 						"fileSystem": {
-							"value": "@dataset().Table_Name",
+							"value": "retaildw",
 							"type": "Expression"
 						}
 					},
