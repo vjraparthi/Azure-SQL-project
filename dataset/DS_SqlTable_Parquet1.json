@@ -24,7 +24,7 @@
 					"type": "Expression"
 				},
 				"fileSystem": {
-					"value": "@dataset().tablename\r\n",
+					"value": "retaildw",
 					"type": "Expression"
 				}
 			},
