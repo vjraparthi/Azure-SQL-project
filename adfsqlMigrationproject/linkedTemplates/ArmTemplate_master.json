@@ -17,7 +17,7 @@
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://strgsqlmigrationproject.dfs.core.windows.net/"
+			"defaultValue": "https://sgsqlmigrationnew.dfs.core.windows.net/"
 		},
 		"LS_SQLMIGRATION_properties_typeProperties_server": {
 			"type": "string",

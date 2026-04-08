@@ -12,7 +12,7 @@
 			"value": ""
 		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://strgsqlmigrationproject.dfs.core.windows.net/"
+			"value": "https://sgsqlmigrationnew.dfs.core.windows.net/"
 		},
 		"LS_SQLMIGRATION_properties_typeProperties_server": {
 			"value": "DESKTOP-ORQI7F1\\SQLEXPRESS"
